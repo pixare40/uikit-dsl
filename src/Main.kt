@@ -1,8 +1,23 @@
-import uikitui.models.Action
-
 fun main() {
-    val layout = Layout("buttton", "A",)
+    val layout = layout {
+        button{
+            text = "Click me"
+            label = "Click me"
+            icon = "https://via.placeholder.com/150"
+            type = "primary"
+            action{
+                type="play"
+            }
+        }
+    }
+    val builder = StringBuilder()
+    layout.renderMustache(builder, "");
+    println("Final result")
+    println(builder.toString())
+}
 
-    var builder = StringBuilder()
-    println(layout.render(builder, ""))
+fun layout(init: Layout.() -> Unit): Layout {
+    val layout = Layout("layout", "A")
+    layout.init()
+    return layout
 }

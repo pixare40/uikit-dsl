@@ -11,7 +11,7 @@ interface IComponent{
 }
 
 @UIKitMarker
-abstract class Component(val type: String, val zone: String): IComponent {
+abstract class Component(var type: String = "", var zone: String): IComponent {
     val children = arrayListOf<IComponent>()
 
     protected fun <T: Component> initComponent(component: T, init: T.() -> Unit): T{
