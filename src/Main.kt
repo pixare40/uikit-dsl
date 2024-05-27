@@ -3,7 +3,7 @@ fun main() {
         button{
             text = "Click me"
             label = "Click me"
-            icon = "https://via.placeholder.com/150"
+            icon = "play"
             type = "primary"
             action{
                 type="play"
@@ -11,13 +11,13 @@ fun main() {
         }
     }
     val builder = StringBuilder()
-    layout.renderMustache(builder, "");
+    layout.renderMustache(builder, "")
     println("Final result")
     println(builder.toString())
 }
 
 fun layout(init: Layout.() -> Unit): Layout {
-    val layout = Layout("layout", "A")
+    val layout = Layout()
     layout.init()
     return layout
 }

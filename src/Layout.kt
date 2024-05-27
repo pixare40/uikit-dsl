@@ -3,7 +3,7 @@ import uikitui.models.Hero
 import uikitui.models.core.Component
 import java.lang.StringBuilder
 
-class Layout(type: String, zone: String): Component("","") {
+class Layout(): Component("","") {
     fun hero(init: Hero.() -> Unit) = initComponent(Hero(), init)
     fun button(
         init: Button.() -> Unit,
