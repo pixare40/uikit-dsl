@@ -17,7 +17,7 @@ class Button() : Component("", ""){
     override fun renderMustache(builder: StringBuilder, indent: String){
         val actionResult = children[0].renderMustache(StringBuilder(), "$indent            ");
         builder.append("$indent{\n")
-        builder.append("$indent    '\$type': 'button'\n")
+        builder.append("$indent    '\$type': 'button',\n")
         builder.append("$indent    'attributes': {\n")
         builder.append("$indent        'text': '$text',\n")
         builder.append("$indent        'label': '$label',\n")
