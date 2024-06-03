@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="jetbrains.kotlin.scripting.jvm.host" type="repository">
+    <properties maven-id="org.jetbrains.kotlin:kotlin-scripting-jvm-host:1.9.23" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/kotlin-scripting-jvm-host-1.9.23.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/kotlin-script-runtime-1.9.23.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/kotlin-stdlib-1.9.23.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/annotations-13.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/kotlin-scripting-common-1.9.23.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/kotlin-scripting-jvm-1.9.23.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/kotlin-compiler-embeddable-1.9.23.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/kotlin-reflect-1.6.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/kotlin-daemon-embeddable-1.9.23.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/trove4j-1.0.20200330.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/kotlin-scripting-compiler-embeddable-1.9.23.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/kotlin-scripting-compiler-impl-embeddable-1.9.23.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -11,5 +11,9 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="KotlinJavaRuntime" level="project" />
+    <orderEntry type="library" name="jetbrains.kotlin.scripting.jvm.host" level="project" />
+    <orderEntry type="library" name="jetbrains.kotlin.scripting.common" level="project" />
+    <orderEntry type="library" name="jetbrains.kotlin.scripting.jvm" level="project" />
+    <orderEntry type="library" name="jetbrains.kotlin.scripting.dependencies" level="project" />
   </component>
 </module>
