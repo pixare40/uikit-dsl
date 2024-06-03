@@ -1,6 +1,7 @@
 
 import kotlin.script.experimental.annotations.KotlinScript
 import kotlin.script.experimental.api.ResultValue
+import kotlin.script.experimental.api.valueOrNull
 import kotlin.script.experimental.api.valueOrThrow
 import kotlin.script.experimental.host.toScriptSource
 import kotlin.script.experimental.jvm.dependenciesFromCurrentContext
@@ -38,9 +39,7 @@ fun main() {
 
     val result = BasicJvmScriptingHost().eval(layoutScriptSource,
         compilationConfiguration,
-        null).valueOrThrow().returnValue;
-
-    println("Script evaluation result: ${result.scriptInstance}")
+        null).valueOrNull()?.returnValue
 
     println("Starting script evaluation")
     if (result !== null) {
